@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mukta Rai | Project Architect</title>
+  <!-- Google Fonts: Roboto & Playfair Display -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Roboto', 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+      scroll-behavior: smooth;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 40px;
+      background-color: #ffffff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      border-radius: 14px;
+    }
+    /* Header / Cover Page */
+    .cover {
+      text-align: center;
+      padding: 60px 20px;
+      border-bottom: 4px solid #008080;
+      margin-bottom: 40px;
+      background: linear-gradient(to bottom, #ffffff, #f8fbfd);
+      border-radius: 12px 12px 0 0;
+    }
+    .name {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.6em;
+      font-weight: 700;
+      color: #1a3b5d;
+      margin: 10px 0;
+      letter-spacing: -1px;
+    }
+    .title {
+      font-size: 1.6em;
+      color: #008080;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+    .contact-info {
+      font-size: 1.15em;
+      color: #5a5a5a;
+      margin-bottom: 15px;
+    }
+    .contact-info a {
+      color: #008080;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+    .contact-info a:hover {
+      color: #005f5f;
+      text-decoration: underline;
+    }
+    .tagline {
+      font-style: italic;
+      color: #6c757d;
+      margin: 15px 0;
+      font-size: 1.2em;
+      font-weight: 400;
+    }
+    .credentials {
+      font-size: 0.95em;
+      color: #6c757d;
+      margin-top: 15px;
+      line-height: 1.6;
+    }
+    /* Introduction Section */
+    .introduction h2 {
+      font-family: 'Playfair Display', serif;
+      color: #1a3b5d;
+      border-bottom: 2px solid #008080;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      font-size: 1.9em;
+      font-weight: 600;
+    }
+    .introduction p {
+      margin-bottom: 18px;
+      text-align: justify;
+      font-size: 1.05em;
+    }
+    .highlight {
+      background: linear-gradient(to right, #e6f7f7, #d9f0f0);
+      border-left: 6px solid #008080;
+      padding: 20px 25px;
+      margin: 30px 0;
+      font-style: italic;
+      color: #2e4a4a;
+      border-radius: 0 8px 8px 0;
+      box-shadow: 0 3px 10px rgba(0, 128, 128, 0.1);
+    }
+    .skills-list ul {
+      margin: 15px 0;
+      padding-left: 25px;
+    }
+    .skills-list li {
+      margin: 10px 0;
+      color: #444;
+      font-size: 1.02em;
+    }
+    /* Projects Section */
+    .projects h2 {
+      font-family: 'Playfair Display', serif;
+      color: #1a3b5d;
+      border-bottom: 2px solid #008080;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+      font-size: 1.9em;
+      font-weight: 600;
+    }
+    .project-card {
+      position: relative;
+      background-color: #fdfdfd;
+      border-left: 6px solid #008080;
+      padding: 24px;
+      margin-bottom: 24px;
+      border-radius: 0 10px 10px 0;
+      transition: all 0.35s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+    }
+    .project-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 1;
+    }
+    .project-card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      z-index: 2;
+      position: relative;
+    }
+    .project-card:hover {
+      background-color: #e6f7f7;
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      border-left-color: #005f5f;
+    }
+    .project-title {
+      font-size: 1.4em;
+      font-weight: 600;
+      color: #1a3b5d;
+      margin: 0 0 8px 0;
+    }
+    .project-location {
+      font-size: 1.05em;
+      color: #008080;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+    .project-desc {
+      font-size: 1.02em;
+      color: #555;
+      line-height: 1.65;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding: 35px 0 20px;
+      color: #6c757d;
+      font-size: 0.95em;
+      border-top: 1px solid #dee2e6;
+    }
+    footer .copyright {
+      margin: 8px 0;
+      font-weight: 500;
+    }
+    footer .creator {
+      color: #008080;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- COVER PAGE -->
+    <div class="cover">
+      <h1 class="name">Mukta Rai</h1>
+      <div class="title">Project Architect & Interior Designer</div>
+      <div class="contact-info">
+        <div>📧 <a href="mailto:muktaa.rai@gmail.com">muktaa.rai@gmail.com</a></div>
+        <div>📞 +91 98828 79768</div>
+      </div>
+      <div class="tagline">Designing Spaces with Purpose, Precision & Passion</div>
+      <div class="credentials">
+        Registered Architect | Associate Member, Indian Institute of Architects<br>
+        Empanelled with HP Town & Country Planning | Council of Architecture (CA/2008/42044)
+      </div>
+    </div>
+
+    <!-- INTRODUCTION -->
+    <div class="introduction">
+      <h2>Professional Overview</h2>
+      <p>
+        With over <strong>15 years of experience</strong> in architectural design and project management, I am <strong>Mukta Rai</strong> — a licensed and empanelled architect committed to creating functional, sustainable, and context-sensitive built environments. My expertise spans residential, commercial, institutional, and public infrastructure projects across diverse geographies—from metropolitan hubs like NCR and Chandigarh to mountainous regions of Himachal Pradesh.
+      </p>
+      <div class="highlight">
+        My design philosophy emphasizes <strong>harmony between form, function, and environment</strong>. I believe architecture must respond not only to aesthetic vision but also to user behavior, climate, and structural resilience—especially in seismically active zones.
+      </div>
+      <p>
+        Certified in <strong>Earthquake-Resistant Design & Construction (NIT Hamirpur)</strong>, I bring technical rigor to high-risk zones, ensuring safety and longevity. I have led end-to-end project delivery—from conceptualization and design development to municipal approvals, cost estimation, BOQ preparation, and site supervision.
+      </p>
+      <p>
+        My collaborative approach bridges architecture, structure, MEP, and client expectations, ensuring seamless execution. Key areas of expertise include:
+      </p>
+      <div class="skills-list">
+        <ul>
+          <li><strong>Architectural Design & Documentation</strong> – Working, submission, and tender drawings</li>
+          <li><strong>Interior Design & Renovation</strong> – Residential, commercial, and institutional spaces</li>
+          <li><strong>Project Coordination</strong> – with Structure & MEP consultants, Fire Consultants, Clients, Contractors, and Civic authorities</li>
+          <li><strong>Regulatory Compliance</strong> – ULBs, HP TCP, COA approvals</li>
+          <li><strong>Cost Estimation, BOQ, and Fit-Out Management</strong></li>
+        </ul>
+      </div>
+      <p>
+        I have contributed to landmark developments such as <em>India Bulls</em>, <em>Unitech World City</em>, and <em>Sangam Courtyard Mall</em>. Additionally, I served as an Individual Consultant for <strong>GOI-UNDP</strong>, supporting urban local bodies in slum redevelopment and public facility upgrades under the Housing for Urban Poor initiative.
+      </p>
+      <p>
+        Driven by a commitment to excellence, I blend technical precision with creative insight—ensuring every project is not just built, but thoughtfully realized.
+      </p>
+    </div>
+
+    <!-- PROJECTS SECTION -->
+    <div class="projects">
+      <h2>Some Of My Notable Projects</h2>
+
+      <div class="project-card">
+        <a href="https://mukta2222.github.io/portfolio/enigma.html" target="_blank">
+          <div class="project-title">Enigma, India Bulls Group Housing</div>
+          <div class="project-location">Gurgaon, Haryana</div>
+          <div class="project-desc">
+            A premium residential development featuring integrated layouts, sustainable materials, and seismic-resilient design. Oversaw architectural design, approvals, and construction supervision.
+          </div>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="http://www.mukta-architect.com/projects/alpha" target="_blank">
+          <div class="project-title">Alpha, Sector-84 Group Housing</div>
+          <div class="project-location">Gurgaon, Haryana</div>
+          <div class="project-desc">
+            High-density residential complex with optimized unit planning and modern façade treatment. Led design coordination and municipal submissions.
+          </div>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="http://www.mukta-architect.com/projects/sangam" target="_blank">
+          <div class="project-title">Sangam Courtyard Mall</div>
+          <div class="project-location">New Delhi</div>
+          <div class="project-desc">
+            Mixed-use retail and entertainment hub with climate-responsive central courtyard. Responsible for architectural detailing and interior integration.
+          </div>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="http://www.mukta-architect.com/projects/cidade-de" target="_blank">
+          <div class="project-title">Cidade-de</div>
+          <div class="project-location">Goa</div>
+          <div class="project-desc">
+            Luxury villa cluster emphasizing tropical modernism and privacy. Managed design development and client coordination.
+          </div>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="http://www.mukta-architect.com/projects/unitech-ph3-calcutta" target="_blank">
+          <div class="project-title">Unitech World City, Phase III</div>
+          <div class="project-location">Kolkata, West Bengal</div>
+          <div class="project-desc">
+            Master-planned township with high-rise towers and community amenities. Handled architectural documentation and site execution.
+          </div>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="http://www.mukta-architect.com/projects/air-unitech-ph3" target="_blank">
+          <div class="project-title">AIR (G+40 Tower), Unitech World City</div>
+          <div class="project-location">Kolkata, West Bengal</div>
+          <div class="project-desc">
+            One of the tallest residential towers in Eastern India. Led design coordination and structural integration for vertical living.
+          </div>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="http://www.mukta-architect.com/projects/chandigarh-amusement-park" target="_blank">
+          <div class="project-title">Chandigarh Amusement Park</div>
+          <div class="project-location">Chandigarh</div>
+          <div class="project-desc">
+            Family entertainment complex with thematic zones and accessible design. Contributed to architectural planning and user flow optimization.
+          </div>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="http://www.mukta-architect.com/projects/house-mayfair-garden" target="_blank">
+          <div class="project-title">Private Residence, May Fair Garden</div>
+          <div class="project-location">New Delhi</div>
+          <div class="project-desc">
+            Custom luxury home with modernist interiors and energy-efficient features. Full design and interior execution.
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="copyright">&copy; 2025 Mukta Rai. All Rights Reserved.</div>
+      <div class="creator">Designed & Created by Mukta Rai — Project Architect & Designer</div>
+    </footer>
+  </div>
+</body>
+</html>
