@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangam Courtyard - Architectural Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 2rem;
+        }
+
+        /* Header Styles */
+        .main-header {
+            background: linear-gradient(to right, rgba(25, 51, 77, 0.8), rgba(46, 79, 107, 0.8)), url('img8.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .main-header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .main-header p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        section h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #19334d;
+        }
+
+        /* Project Highlights Styles */
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            text-align: center;
+        }
+
+        .highlight-item {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .highlight-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .highlight-item h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: #19334d;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contributions Styles */
+        .contributions-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contribution-item {
+            background: #fff;
+            padding: 1.5rem;
+            border-left: 5px solid #19334d;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .contribution-item h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: #19334d;
+            margin-top: 0;
+        }
+
+        /* Architectural Showcase Styles */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .image-grid figure {
+            margin: 0;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .image-grid figure:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .image-grid figcaption {
+            padding: 1.5rem;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .image-grid figcaption h4 {
+            font-family: 'Montserrat', sans-serif;
+            color: #19334d;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+        
+        .image-grid figcaption p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Footer Styles */
+        .main-footer {
+            background: #19334d;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .main-footer p {
+            margin: 0;
+        }
+        
+        /* Responsive Design */
+        @media(max-width: 768px) {
+            .main-header h1 {
+                font-size: 2.5rem;
+            }
+            section h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1>Sangam Courtyard</h1>
+            <p>Major Somnath Marg, Sector 9, R.K. Puram, New Delhi</p>
+        </div>
+    </header>
+
+    <section id="project-highlights">
+        <div class="container">
+            <h2>Project Highlights</h2>
+            <div class="highlights-grid">
+                <div class="highlight-item">
+                    <h3>Urban Revitalization</h3>
+                    <p>Transformed an old single-screen cinema into a modern, vibrant commercial hub, rejuvenating the urban landscape of R.K. Puram. [8]</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>Complex Site Adaptation</h3>
+                    <p>Skillfully designed a functional and aesthetic structure on a challenging .83-acre curved site, successfully integrating two multiplex screens. [13]</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>Mixed-Use Integration</h3>
+                    <p>A successful fusion of entertainment and culinary experiences, hosting PVR Cinemas alongside a curated selection of premium cafes and restaurants. [4, 8]</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>Contemporary Facade Design</h3>
+                    <p>The original facade was replaced with a dynamic composition of glass, steel, and textured patterns, creating a modern architectural identity. [8]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="my-contributions">
+        <div class="container">
+            <h2>Architectural Role</h2>
+            <div class="contributions-list">
+                <div class="contribution-item">
+                    <h3>Design Conceptualization & Strategy</h3>
+                    <p>Led the initial design phase, focusing on the challenge of modernizing the iconic Sangam Theatre. My core responsibility was to develop a design that respected its legacy while introducing a contemporary mixed-use program, including the strategic placement of two cineplexes within the irregular site geometry.</p>
+                </div>
+                <div class="contribution-item">
+                    <h3>Spatial Planning and Functional Integration</h3>
+                    <p>Orchestrated the spatial layout to create a seamless flow between the retail, dining, and cinema zones. This involved complex planning to ensure optimal circulation, patron experience, and the successful integration of diverse tenants like Starbucks, Delhi Club House, and PVR cinemas. [4, 6]</p>
+                </div>
+                <div class="contribution-item">
+                    <h3>Material and Facade Innovation</h3>
+                    <p>Drove the selection of materials for the building's exterior, moving from the old plaster facade to a modern aesthetic using glass and pre-fabricated steel sheets. This decision was pivotal in creating the building's new, sophisticated identity and visual appeal in the neighborhood. [8]</p>
+                </div>
+                 <div class="contribution-item">
+                    <h3>Stakeholder & Engineering Coordination</h3>
+                    <p>Acted as a key point of contact between the client (PVR Limited) and various engineering teams. This role was crucial for translating the architectural vision into a viable structural and technical reality, ensuring the project was completed successfully within the set timeframe and budget. [17]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="architectural-showcase">
+        <div class="container">
+            <h2>Architectural Showcase</h2>
+            <div class="image-grid">
+                <figure>
+                    <img src="img4.jpg" alt="Front exterior view of Sangam Courtyard">
+                    <figcaption>
+                        <h4>Exterior Facade</h4>
+                        <p>The building's curved glass facade creates an inviting and modern entryway. The design utilizes a combination of transparent and patterned glass to balance natural light and visual interest, reflecting the vibrant activity within.</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img8.jpg" alt="Architectural rendering of Sangam Courtyard's exterior">
+                    <figcaption>
+                        <h4>Design Visualization</h4>
+                        <p>This rendering illustrates the intended architectural harmony between the commercial spaces and the prominent PVR cinema block. The design focuses on creating a cohesive and upscale destination through its massing and material palette.</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img2.jpg" alt="Interior atrium of Sangam Courtyard showing multiple levels">
+                    <figcaption>
+                        <h4>Central Atrium</h4>
+                        <p>The multi-level atrium serves as the central circulation spine of the courtyard. Its open design, accentuated by geometric floor patterns and glass railings, creates a sense of spaciousness and connectivity between the different levels and tenants like Starbucks and PVR. [4]</p>
+                    </figcaption>
+                </figure>
+                 <figure>
+                    <img src="img5.jpg" alt="Ground floor exterior view showing Delhi Club House and Starbucks">
+                    <figcaption>
+                        <h4>Ground-Level Integration</h4>
+                        <p>The exterior view highlights the seamless integration of high-end retail and dining spaces at the ground level. The extensive use of glass storefronts for establishments like Delhi Club House and Starbucks fosters a connection between the interior and the surrounding public space. [6]</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img1.jpg" alt="Interior of Delhi Club House restaurant">
+                    <figcaption>
+                        <h4>Refined Interior Ambience</h4>
+                        <p>The interior of Delhi Club House evokes a classic, yet contemporary feel. The long, elegant bar, leather-upholstered seating, and warm lighting create a sophisticated and welcoming atmosphere, contributing to the Courtyard's upscale dining options. [6, 18]</p>
+                    </figcaption>
+                </figure>
+                 <figure>
+                    <img src="img3.jpg" alt="Interior of Cafe Delhi Heights restaurant">
+                    <figcaption>
+                        <h4>Eclectic & Rustic Modernism</h4>
+                        <p>Cafe Delhi Heights showcases a unique material palette combining rustic wood, exposed ductwork, and industrial-style metal shelving. [10] This creates a vibrant, eclectic space that adds to the diverse architectural experiences within the Courtyard.</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img6.jpg" alt="High-angle view of the interior atrium">
+                    <figcaption>
+                        <h4>Spatial Dynamics</h4>
+                        <p>This high-angle view emphasizes the project's spatial hierarchy. The interplay of transparent elevators, open walkways, and varied storefronts creates a dynamic and engaging interior environment that encourages exploration across its multiple floors.</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img7.jpg" alt="Entrance view of Sangam Courtyard">
+                    <figcaption>
+                        <h4>Threshold Experience</h4>
+                        <p>The main entrance is designed to be a clear, welcoming threshold. The use of a glass curtain wall framed by modern cladding materials creates a grand yet approachable entry, setting the tone for the premium experience inside.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2025 Mukta Rai. All rights reserved.</p>
+            <p>Created by Mukta Rai, Project Architect.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
