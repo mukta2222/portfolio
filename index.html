@@ -19,8 +19,8 @@
     }
     .container {
       max-width: 1000px;
-      margin: 40px auto;
-      padding: 40px;
+      margin: 20px auto;
+      padding: 30px;
       background-color: #ffffff;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
       border-radius: 14px;
@@ -28,35 +28,35 @@
     /* Header / Cover Page */
     .cover {
       text-align: center;
-      padding: 60px 20px;
+      padding: 50px 20px;
       border-bottom: 4px solid #008080;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       background: linear-gradient(to bottom, #ffffff, #f8fbfd);
       border-radius: 12px 12px 0 0;
     }
     .name {
       font-family: 'Playfair Display', serif;
-      font-size: 3.6em;
+      font-size: clamp(2.8em, 5vw, 3.6em);
       font-weight: 700;
       color: #1a3b5d;
       margin: 10px 0;
       letter-spacing: -1px;
     }
     .title {
-      font-size: 1.6em;
+      font-size: 1.5em;
       color: #008080;
       font-weight: 500;
       margin-bottom: 15px;
     }
     .contact-info {
-      font-size: 1.15em;
+      font-size: 1.1em;
       color: #5a5a5a;
       margin-bottom: 15px;
     }
     .contact-info a {
       color: #008080;
       text-decoration: none;
-      margin: 0 10px;
+      margin: 0 8px;
       transition: color 0.3s ease;
     }
     .contact-info a:hover {
@@ -67,11 +67,10 @@
       font-style: italic;
       color: #6c757d;
       margin: 15px 0;
-      font-size: 1.2em;
-      font-weight: 400;
+      font-size: 1.15em;
     }
     .credentials {
-      font-size: 0.95em;
+      font-size: 0.9em;
       color: #6c757d;
       margin-top: 15px;
       line-height: 1.6;
@@ -83,7 +82,7 @@
       border-bottom: 2px solid #008080;
       padding-bottom: 10px;
       margin-bottom: 25px;
-      font-size: 1.9em;
+      font-size: clamp(1.7em, 4vw, 1.9em);
       font-weight: 600;
     }
     .introduction p {
@@ -95,7 +94,7 @@
       background: linear-gradient(to right, #e6f7f7, #d9f0f0);
       border-left: 6px solid #008080;
       padding: 20px 25px;
-      margin: 30px 0;
+      margin: 25px 0;
       font-style: italic;
       color: #2e4a4a;
       border-radius: 0 8px 8px 0;
@@ -116,27 +115,20 @@
       color: #1a3b5d;
       border-bottom: 2px solid #008080;
       padding-bottom: 10px;
-      margin-bottom: 30px;
-      font-size: 1.9em;
+      margin-bottom: 25px;
+      font-size: clamp(1.7em, 4vw, 1.9em);
       font-weight: 600;
     }
     .project-card {
       position: relative;
       background-color: #fdfdfd;
       border-left: 6px solid #008080;
-      padding: 24px;
-      margin-bottom: 24px;
+      padding: 22px;
+      margin-bottom: 22px;
       border-radius: 0 10px 10px 0;
       transition: all 0.35s ease;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
       overflow: hidden;
-    }
-    .project-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      z-index: 1;
     }
     .project-card a {
       text-decoration: none;
@@ -147,20 +139,20 @@
     }
     .project-card:hover {
       background-color: #e6f7f7;
-      transform: translateY(-4px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
       border-left-color: #005f5f;
     }
     .project-title {
       font-size: 1.4em;
       font-weight: 600;
       color: #1a3b5d;
-      margin: 0 0 8px 0;
+      margin: 0 0 6px 0;
     }
     .project-location {
       font-size: 1.05em;
       color: #008080;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
       font-weight: 500;
     }
     .project-desc {
@@ -171,10 +163,10 @@
     /* Footer */
     footer {
       text-align: center;
-      margin-top: 60px;
-      padding: 35px 0 20px;
+      margin-top: 50px;
+      padding: 30px 0 15px;
       color: #6c757d;
-      font-size: 0.95em;
+      font-size: 0.9em;
       border-top: 1px solid #dee2e6;
     }
     footer .copyright {
@@ -184,6 +176,27 @@
     footer .creator {
       color: #008080;
       font-weight: 600;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .container {
+        margin: 15px;
+        padding: 20px;
+      }
+      .cover {
+        padding: 40px 15px;
+      }
+      .contact-info {
+        font-size: 1em;
+      }
+      .project-card {
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .project-title {
+        font-size: 1.25em;
+      }
     }
   </style>
 </head>
@@ -214,9 +227,6 @@
         My design philosophy emphasizes <strong>harmony between form, function, and environment</strong>. I believe architecture must respond not only to aesthetic vision but also to user behavior, climate, and structural resilience—especially in seismically active zones.
       </div>
       <p>
-        Certified in <strong>Earthquake-Resistant Design & Construction (NIT Hamirpur)</strong>, I bring technical rigor to high-risk zones, ensuring safety and longevity. I have led end-to-end project delivery—from conceptualization and design development to municipal approvals, cost estimation, BOQ preparation, and site supervision.
-      </p>
-      <p>
         My collaborative approach bridges architecture, structure, MEP, and client expectations, ensuring seamless execution. Key areas of expertise include:
       </p>
       <div class="skills-list">
@@ -229,16 +239,16 @@
         </ul>
       </div>
       <p>
-        I have contributed to landmark developments such as <em>India Bulls</em>, <em>Unitech World City</em>, and <em>Sangam Courtyard Mall</em>. Additionally, I served as an Individual Consultant for <strong>GOI-UNDP</strong>, supporting urban local bodies in slum redevelopment and public facility upgrades under the Housing for Urban Poor initiative.
+        I have delivered iconic developments including <em>India Bulls</em>, <em>Unitech World City</em>, and <em>Sangam Courtyard Mall</em>, shaping skylines and lifestyles across India. Each project reflects a deep commitment to innovation, user experience, and enduring quality.
       </p>
       <p>
-        Driven by a commitment to excellence, I blend technical precision with creative insight—ensuring every project is not just built, but thoughtfully realized.
+        Driven by a passion for meaningful design, I blend technical precision with creative vision—ensuring every space is not just constructed, but thoughtfully conceived and realized.
       </p>
     </div>
 
     <!-- PROJECTS SECTION -->
     <div class="projects">
-      <h2>Some Of My Notable Projects</h2>
+      <h2>Notable Projects</h2>
 
       <div class="project-card">
         <a href="https://mukta2222.github.io/portfolio/enigma.html" target="_blank">
@@ -316,6 +326,47 @@
           <div class="project-location">New Delhi</div>
           <div class="project-desc">
             Custom luxury home with modernist interiors and energy-efficient features. Full design and interior execution.
+          </div>
+        </a>
+      </div>
+
+      <!-- Newly Added Projects -->
+      <div class="project-card">
+        <a href="https://mukta2222.github.io/portfolio/uniworld-resort.html" target="_blank">
+          <div class="project-title">Uniworld Resort</div>
+          <div class="project-location">Gurgaon, Haryana</div>
+          <div class="project-desc">
+            A luxury wellness retreat blending contemporary design with natural landscapes. Led master planning, architectural design, and landscape integration.
+          </div>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="http://www.mukta-architect.com/projects/medicity-gurgaon" target="_blank">
+          <div class="project-title">Medicity</div>
+          <div class="project-location">Gurgaon, Haryana</div>
+          <div class="project-desc">
+            Integrated healthcare complex designed for efficiency, hygiene, and patient comfort. Oversaw architectural planning and facility workflow optimization.
+          </div>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="http://www.mukta-architect.com/projects/vp-villa-jindal" target="_blank">
+          <div class="project-title">VP Villa Jindal</div>
+          <div class="project-location">Raigarh, Chhattisgarh</div>
+          <div class="project-desc">
+            Grand private estate reflecting regional elegance and modern luxury. Directed full architectural and interior design with bespoke detailing.
+          </div>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="http://www.mukta-architect.com/projects/club-house-gurgaon" target="_blank">
+          <div class="project-title">Club House</div>
+          <div class="project-location">Gurgaon, Haryana</div>
+          <div class="project-desc">
+            Premium recreational facility with multipurpose halls, fitness zones, and social lounges. Designed for functionality, aesthetics, and member experience.
           </div>
         </a>
       </div>
