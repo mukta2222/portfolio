@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio: CIDADE DE GOA - V</title>
+    <style>
+        /* Basic Setup */
+        :root {
+            --primary-font: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            --secondary-font: 'Montserrat', sans-serif;
+            --text-color: #333;
+            --bg-color: #ffffff;
+            --accent-color: #007BFF;
+            --header-bg: rgba(40, 50, 60, 0.8);
+            --footer-bg: #28323c;
+            --section-bg: #f4f7f6;
+            --border-color: #e0e0e0;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--primary-font);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Semantic Container Styling */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--secondary-font);
+            font-weight: 700;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+
+        /* Header Section */
+        .project-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img1.jpg'); /* Placeholder background */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 40vh;
+        }
+
+        .project-header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+
+        .project-header p {
+            font-family: var(--secondary-font);
+            font-size: 1.5rem;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        /* Project Highlights Section */
+        .project-highlights {
+            background-color: var(--section-bg);
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .highlight-item {
+            background: var(--bg-color);
+            padding: 25px;
+            border-left: 5px solid var(--accent-color);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .highlight-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        .highlight-item h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+        }
+
+        /* My Contributions Section */
+        .my-contributions ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .my-contributions li {
+            background: var(--section-bg);
+            margin-bottom: 15px;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid var(--border-color);
+            font-weight: 500;
+        }
+
+        /* Image Gallery Section */
+        .image-gallery {
+            padding-bottom: 60px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 50px;
+        }
+
+        .gallery-item {
+            margin-bottom: 20px;
+        }
+        
+        .gallery-item figure {
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+        
+        .gallery-item figure:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-item figcaption {
+            padding: 25px;
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-top: none;
+            border-radius: 0 0 8px 8px;
+        }
+        
+        .gallery-item h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        /* Footer Section */
+        .page-footer {
+            background-color: var(--footer-bg);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .page-footer p {
+            margin: 5px 0;
+            opacity: 0.8;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .project-header h1 {
+                font-size: 4.5rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+
+            /* Make some images span the full width for a dynamic layout */
+            .gallery-item:first-child, .gallery-item:last-child {
+                grid-column: 1 / -1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Header Section -->
+    <header class="project-header">
+        <h1>CIDADE DE GOA - V</h1>
+        <p>Goa, India</p>
+    </header>
+
+    <main>
+        <!-- 2. Key Points of the Project -->
+        <section class="project-highlights">
+            <div class="container">
+                <h2>Project Highlights</h2>
+                <div class="highlights-grid">
+                    <div class="highlight-item">
+                        <h3>Heritage Modernization</h3>
+                        <p>A sensitive redevelopment and extension of the iconic 1982 hotel designed by master architect Charles Correa, preserving its unique Portuguese-inspired character. [2, 5]</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h3>Contextual Integration</h3>
+                        <p>The structure emerges organically from a sloping hill, creating a village-like atmosphere that respects the natural topography and overlooks the bay. [2, 4]</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h3>Seamless Indoor-Outdoor Flow</h3>
+                        <p>Designed with semi-open corridors, courtyards, and expansive decks to blur the boundary between built spaces and the lush tropical landscape. [3, 4]</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h3>Luxury & Convention Hub</h3>
+                        <p>The new extension adds a modern 5-star hotel and one of the largest convention facilities in Goa, redefining luxury and business tourism in the region. [3, 5]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. My Contributions -->
+        <section class="my-contributions">
+            <div class="container">
+                <h2>Architectural Role</h2>
+                <ul>
+                    <li>Led the design development for the new extension wing, ensuring architectural synergy with Charles Correa's original masterpiece while introducing contemporary aesthetics and functionality.</li>
+                    <li>Oversaw the master planning and integration of the new convention center and hotel tower, focusing on circulation, spatial hierarchy, and optimizing coastal views.</li>
+                    <li>Developed and detailed the facade systems, including high-performance glazing and solar shading elements, to achieve environmental efficiency and guest comfort.</li>
+                    <li>Coordinated with a multidisciplinary team of engineers, landscape architects, and interior designers to ensure the project's design integrity was executed flawlessly from concept to completion.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- 4. Image Integration and Architectural Descriptions -->
+        <section class="image-gallery">
+            <div class="container">
+                <h2>Architectural Narrative</h2>
+                <div class="gallery-grid">
+                    <figure class="gallery-item">
+                        <img src="https://storage.googleapis.com/gemini-prod-us-east1-9010/v1/files/3bde4c35-c3f2-4a00-9856-78e88e89f81f" alt="Exterior view of Cidade de Goa - V from the beach">
+                        <figcaption>
+                            <h3>1. Symbiosis with Nature</h3>
+                            <p>Viewed from the coast, the building demonstrates a profound respect for its site. The terraced structure descends the hillside, with horizontal lines that echo the horizon and the sea. This approach minimizes the building's vertical impact, embedding it within the landscape rather than imposing upon it, creating a dialogue between the built form and its natural context.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="https://storage.googleapis.com/gemini-prod-us-east1-9010/v1/files/06c27651-7b71-4770-bdc7-872f2e511477" alt="Aerial view of the hotel's rooftop pools and green roofs">
+                        <figcaption>
+                            <h3>2. The Fifth Façade</h3>
+                            <p>The rooftop is treated as a critical "fifth façade," a landscape of leisure. This high-angle view reveals a complex interplay of green roofs, infinity pools, and sun decks. These elements not only provide premium amenity spaces with panoramic views but also contribute to the building's sustainability by reducing heat gain and managing rainwater.</p>
+                        </figcaption>
+                    </figure>
+                    
+                    <figure class="gallery-item">
+                        <img src="https://storage.googleapis.com/gemini-prod-us-east1-9010/v1/files/5a4de8b4-0c21-4d7a-85d1-678553644fec" alt="Modernist colonnade and entrance detail">
+                        <figcaption>
+                            <h3>3. Modernist Colonnade</h3>
+                            <p>This detail showcases the powerful rhythm of the structural columns. These elements form a modern colonnade, creating a grand, shaded walkway that mediates the transition from the driveway to the interior. The deep overhangs and strong vertical lines create a dynamic play of light and shadow, referencing classical architectural principles with a clean, contemporary material palette.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="https://storage.googleapis.com/gemini-prod-us-east1-9010/v1/files/c412e698-c115-4680-863a-2f477efedab6" alt="Terraced levels with multiple pools and gardens">
+                        <figcaption>
+                            <h3>4. Hierarchy of Spaces</h3>
+                            <p>This top-down perspective highlights the project's sophisticated spatial planning. Multiple terraces create a hierarchy of public and semi-private outdoor zones. The arrangement of pools, lawns, and pathways provides guests with diverse experiences, from active recreation to quiet contemplation, all while maintaining a visual connection to the beach beyond.</p>
+                        </figcaption>
+                    </figure>
+                    
+                    <figure class="gallery-item">
+                        <img src="https://storage.googleapis.com/gemini-prod-us-east1-9010/v1/files/944e83f2-4b77-44da-b016-11f8e6c46646" alt="Outdoor terrace and building facade with glass walls">
+                        <figcaption>
+                            <h3>5. Material Honesty and Transparency</h3>
+                            <p>The expansive outdoor terrace is defined by its direct relationship with the building's facade. Floor-to-ceiling glass walls dissolve the barrier between inside and out, flooding interior spaces with natural light. The material palette—exposed concrete, glass, and warm paving stones—is honest and robust, chosen to withstand the coastal climate while offering a timeless aesthetic.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 5. Footer Section -->
+    <footer class="page-footer">
+        <p>© 2025 Mukta Rai. All rights reserved.</p>
+        <p>Created by Mukta Rai, Project Architect.</p>
+    </footer>
+
+</body>
+</html>
