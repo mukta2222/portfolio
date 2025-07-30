@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicity - Medanta | Mukta Rai - Architectural Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
+        :root {
+            --primary-color: #ffffff;
+            --secondary-color: #f4f4f4;
+            --text-color: #333;
+            --header-bg: linear-gradient(135deg, rgba(76, 175, 80, 0.8), rgba(2, 52, 110, 0.8));
+            --footer-bg: #2c3e50;
+            --accent-color: #4CAF50;
+            --font-primary: 'Roboto', sans-serif;
+            --font-secondary: 'Montserrat', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            margin: 0;
+            padding: 0;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header */
+        header {
+            background: var(--header-bg);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 5px solid var(--accent-color);
+        }
+
+        header h1 {
+            font-family: var(--font-secondary);
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-family: var(--font-primary);
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+
+        /* Sections */
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-family: var(--font-secondary);
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+
+        /* Project Highlights */
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .highlight-item {
+            background-color: var(--secondary-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .highlight-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .highlight-item h3 {
+            font-family: var(--font-secondary);
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        /* My Contributions */
+        .contributions-list {
+            max-width: 800px;
+            margin: 0 auto;
+            padding-left: 20px;
+        }
+
+        .contributions-list li {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        /* Image Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .gallery figure {
+            margin: 0;
+            background: var(--secondary-color);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .gallery figure:hover {
+            transform: scale(1.03);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            aspect-ratio: 16/10;
+            object-fit: cover;
+        }
+
+        .gallery figcaption {
+            padding: 1.5rem;
+            font-size: 0.95rem;
+            text-align: justify;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--footer-bg);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            font-weight: 300;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            header p {
+                font-size: 1.2rem;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header role="banner">
+        <h1>Medicity - Medanta</h1>
+        <p>Gurgaon, National Capital Region, India</p>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <section id="highlights">
+                <h2>Project Highlights</h2>
+                <div class="highlights-grid">
+                    <div class="highlight-item">
+                        <h3>Monumental Scale</h3>
+                        <p>Spread across 43 acres, Medanta is a landmark institution with 2.1 million sq. ft. of construction, designed to accommodate 1250 beds, expandable to 1600. [7]</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h3>Holistic & Healing Design</h3>
+                        <p>The design philosophy aimed to create an uplifting and happy space, moving away from traditional sterile hospital environments to promote healing. [8]</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h3>Patient-Centric Planning</h3>
+                        <p>Each floor is dedicated to a specific specialty, creating a 'hospital within a hospital' to enhance efficiency and patient care. [6] Wide corridors and ample natural light are prioritized. [12]</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h3>Advanced Technological Integration</h3>
+                        <p>The infrastructure integrates cutting-edge medical technology, including a BrainSUITE with intraoperative MRI and Da Vinci robotic systems. [6, 12]</p>
+                    </div>
+                     <div class="highlight-item">
+                        <h3>International Standards</h3>
+                        <p>The facility is designed in compliance with top international codes, including the National Building Code of India, NFPA 101, and JCI standards. [7]</p>
+                    </div>
+                     <div class="highlight-item">
+                        <h3>Sustainable Elements</h3>
+                        <p>The building's white facade helps reflect heat, reducing the load on air conditioning systems, a key consideration for North India's climate. [19] An Ayurvedic herbal garden is also included. [12]</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contributions">
+                <h2>My Contributions</h2>
+                <ul class="contributions-list">
+                    <li><strong>Conceptual Design & Spatial Planning:</strong> Played a pivotal role in translating the vision of a holistic healing environment into a functional architectural form, focusing on spatial hierarchy and the integration of natural light to enhance patient well-being.</li>
+                    <li><strong>Facade Development:</strong> Contributed to the design and detailing of the building's facade, ensuring it was not only aesthetically striking but also met performance criteria related to solar heat gain and maintenance. [9]</li>
+                    <li><strong>Stakeholder & Code Coordination:</strong> Acted as a key point of contact for ensuring the architectural plans adhered to a complex matrix of international and national healthcare standards, including JCI and NFPA codes, facilitating a smooth approval and implementation process. [7]</li>
+                    <li><strong>Interior Space Articulation:</strong> Involved in the design of key interior zones, ensuring that the material palette, lighting, and spatial flow contributed to a non-intimidating, patient-friendly atmosphere, from the grand lobby to specialized care units.</li>
+                </ul>
+            </section>
+
+            <section id="gallery-section">
+                <h2>Architectural Showcase</h2>
+                <div class="gallery">
+                    <figure>
+                        <img src="https://i.imgur.com/rN5Lz5p.jpeg" alt="Exterior facade of Medanta - The Medicity showcasing its grand scale and modern design.">
+                        <figcaption>
+                            <strong>Exterior Grandeur and Form:</strong> The building's facade is a statement of modern, minimalist architecture. The interplay between the solid white volumes with recessed balconies and the expansive glass curtain walls creates a dynamic visual rhythm. This design choice not only defines the building's contemporary aesthetic but also serves a functional purpose, maximizing natural light in office and public areas while providing shaded private spaces for patient rooms. The clean lines and monumental scale establish the hospital as a landmark of world-class healthcare.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://i.imgur.com/tY415sW.jpeg" alt="The main lobby and reception area of Medanta hospital, showing high ceilings and an art installation.">
+                        <figcaption>
+                            <strong>Lobby and Spatial Hierarchy:</strong> The main lobby is designed as a grand, welcoming space with soaring ceilings and robust pillars that establish a clear sense of spatial hierarchy. The use of warm, indirect lighting and a neutral color palette with wood accents creates an atmosphere of calm authority. A prominent feature is the large, backlit "Tree of Life" art installation, which serves as a powerful symbol of healing and acts as a central focal point, humanizing the vast scale of the entrance hall. [8]
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://i.imgur.com/WpPjWJz.jpeg" alt="The spacious and well-lit pharmacy at Medanta - The Medicity.">
+                        <figcaption>
+                            <strong>Functional Clarity in the Pharmacy:</strong> This image showcases the hospital's pharmacy, a critical high-traffic area. The design prioritizes efficiency and clarity. A double-height glass wall floods the space with daylight, reducing the feeling of being in a clinical environment. The layout is open and intuitive, with clear signage for "Sales Counter" and well-organized shelving that allows for quick service. The clean lines and uncluttered counters reflect the institution's commitment to precision and patient safety.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://i.imgur.com/YV044yP.jpeg" alt="The cafeteria at Medanta, with modern lighting and nature-inspired wall art.">
+                        <figcaption>
+                            <strong>Restorative Cafeteria Environment:</strong> The cafeteria design moves beyond mere function to create a space for respite and social interaction. The hexagonal ceiling light fixtures and matching wall motifs, reminiscent of molecular structures, subtly reinforce the scientific mission of the institution. The use of light wood tones for booths and furniture, combined with ample seating, fosters a warm and inviting atmosphere. This space is a testament to the design philosophy of creating uplifting environments for patients, staff, and visitors.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                         <img src="https://i.imgur.com/83u1aY7.jpeg" alt="Interior view of a main corridor with directional signage for various hospital services.">
+                        <figcaption>
+                            <strong>Navigational Wayfinding and Circulation:</strong> This corridor highlights the importance of intuitive wayfinding in a complex facility. The clear, color-coded directional signage is strategically placed to guide visitors seamlessly to key departments like Admissions, Patient Services, and Insurance. The wide, uncluttered circulation path is designed to comfortably accommodate high footfall and patient transport. The integration of subtle ceiling design elements and warm lighting makes the space feel less institutional and more hospitable.
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <p>© 2025 Mukta Rai. All rights reserved.</p>
+        <p>Created by Mukta Rai, Project Architect.</p>
+    </footer>
+
+</body>
+</html>
