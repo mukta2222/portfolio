@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mukta Rai - Project Portfolio: AlphaCorp GurgaonOne Sector 84</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(to right, rgba(45, 52, 54, 0.8), rgba(99, 110, 114, 0.8));
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-top: 0.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            width: 60px;
+            height: 3px;
+            background-color: #2d3436;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            text-align: center;
+        }
+
+        .highlight-item {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .highlight-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .highlight-item h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+
+        .contributions-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contributions-list li {
+            background: #fff;
+            padding: 1rem 1.5rem;
+            margin-bottom: 1rem;
+            border-left: 5px solid #2d3436;
+            font-size: 1.1rem;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        figure {
+            margin: 0;
+            background: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        figure:hover {
+            transform: scale(1.03);
+        }
+        
+        figure img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        figcaption {
+            padding: 1.5rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .footer {
+            background-color: #2d3436;
+            color: #dfe6e9;
+            text-align: center;
+            padding: 2rem 1rem;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.2rem;
+            }
+            .header p {
+                font-size: 1rem;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>AlphaCorp GurgaonOne</h1>
+        <p>Sector 84, Gurgaon, Haryana</p>
+    </header>
+
+    <main class="container">
+
+        <section class="section">
+            <h2 class="section-title">Key Features</h2>
+            <div class="highlights-grid">
+                <div class="highlight-item">
+                    <h3>Expansive Green Spaces</h3>
+                    <p>Over 90% of the project area is dedicated to open and green landscapes, fostering a connection with nature. [4, 6]</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>Strategic Master Planning</h3>
+                    <p>Designed by renowned Canadian architects ARCOP, the seven towers are positioned to maximize openness and views. [4, 6]</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>Sustainable Living</h3>
+                    <p>Incorporates eco-friendly features like water conservation, waste management, and sustainable energy practices. [4, 6]</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>Modern Amenities</h3>
+                    <p>Includes a recreational club, swimming pool, sports courts, and facilities for a well-rounded lifestyle. [4, 6, 9]</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">My Contributions</h2>
+            <ul class="contributions-list">
+                <li>Led the conceptual design phase, translating the vision of a nature-integrated living space into architectural plans.</li>
+                <li>Managed the coordination between structural engineers, landscape designers, and construction teams to ensure design integrity.</li>
+                <li>Developed spatial planning for the residential units, focusing on creating functional, three-side open apartments for optimal light and ventilation. [6]</li>
+                <li>Oversaw the selection of the material palette, balancing aesthetics with durability and sustainability goals.</li>
+                <li>Ensured project compliance with local building codes and standards while integrating innovative design solutions.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Architectural Showcase</h2>
+            <div class="portfolio-grid">
+                <figure>
+                    <img src="https://i.imgur.com/uWc2i5f.jpeg" alt="Aerial view of AlphaCorp GurgaonOne Sector 84 showcasing the tower layout and green spaces.">
+                    <figcaption>
+                        <strong>Aerial Perspective:</strong> This view captures the master plan's success in creating a spacious housing society. [3] The strategic placement of the seven high-rise towers along the periphery allows for a large, central green expanse, which serves as the community's lung space. [4]
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://i.imgur.com/F3P5G5D.jpeg" alt="2 Bedroom Unit Floor Plan">
+                    <figcaption>
+                        <strong>Spatial Efficiency (2 BHK):</strong> The 2-bedroom unit demonstrates a compact yet highly functional layout. Careful spatial hierarchy ensures a clear distinction between private and common areas, with an open-plan living and dining space to enhance the sense of spaciousness.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://i.imgur.com/8Qz7B1G.jpeg" alt="3 Bedroom Unit Floor Plan">
+                    <figcaption>
+                        <strong>Family-Centric Design (3 BHK):</strong> This floor plan is tailored for family living, with a master bedroom featuring an en-suite and dedicated wardrobe space. The inclusion of a utility area and balconies extends the functional living space, blurring the lines between indoors and outdoors.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://i.imgur.com/9n98wX5.jpeg" alt="4 Bedroom Unit Floor Plan">
+                    <figcaption>
+                        <strong>Luxurious Expanse (4 BHK):</strong> The 4-bedroom configuration exemplifies luxury in spatial design. The layout provides multiple private balconies and a generous living area, accommodating larger families and social gatherings. The design maintains efficiency and flow despite its larger scale.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://i.imgur.com/vHqB3qG.jpeg" alt="View of the shopping complex and lobby entrance at AlphaCorp GurgaonOne.">
+                    <figcaption>
+                        <strong>Integrated Amenities:</strong> The design incorporates essential amenities like a shopping complex seamlessly into the residential fabric. The clean lines and minimalist aesthetic of the entrance create a welcoming and modern first impression for residents and visitors.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://i.imgur.com/V7w5QGq.jpeg" alt="On-site basketball court surrounded by lush greenery.">
+                    <figcaption>
+                        <strong>Recreational Integration:</strong> Outdoor facilities such as the basketball court are thoughtfully integrated within the landscape. This promotes an active lifestyle and serves as a communal hub, strengthening the sense of community within the development. [9]
+                    </figcaption>
+                </figure>
+                 <figure>
+                    <img src="https://i.imgur.com/99KjNif.jpeg" alt="Second aerial view highlighting the central clubhouse and swimming pool.">
+                    <figcaption>
+                        <strong>Community Core:</strong> This perspective highlights the central clubhouse and swimming pool, which act as the social heart of the project. The surrounding landscape design connects the built form with the environment, creating a resort-like feel.
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Mukta Rai. All rights reserved.</p>
+        <p>Created by Mukta Rai, Project Architect.</p>
+    </footer>
+
+</body>
+</html>
