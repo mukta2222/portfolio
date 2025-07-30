@@ -3,300 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enigma, India Bulls Group Housing | Project Portfolio</title>
+    <title>Indiabulls Enigma - Mukta Rai - Project Architect</title>
     <style>
-        /* --- Global Styles & Fonts --- */
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
-        :root {
-            --bg-color: #f5f5f5;
-            --text-color: #333;
-            --primary-color: #0a2351;
-            --divider-color: #e0e0e0;
-            --shadow: 0 4px 12px rgba(0,0,0,0.08);
-            --spacing-md: 2rem;
-            --spacing-lg: 4rem;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.7;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-
-        /* --- Layout & Container --- */
+        .header {
+            background: linear-gradient(to right, rgba(45, 52, 54, 0.8), rgba(99, 110, 114, 0.8));
+            color: #fff;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            margin: 0;
+            font-weight: 700;
+        }
+        .header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            font-weight: 300;
+        }
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: var(--spacing-md);
+            padding: 2rem;
         }
-
-        /* --- Header --- */
-        .header {
-            background: #ffffff;
-            text-align: center;
-            padding: var(--spacing-lg) var(--spacing-md);
-            border-bottom: 1px solid var(--divider-color);
+        .section {
+            margin-bottom: 3rem;
         }
-
-        .header h1 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
-
-        .header h2 {
-            font-size: 1.3rem;
-            font-weight: 400;
-            color: #555;
-        }
-
-        /* --- Section Styling --- */
-        section {
-            padding: var(--spacing-lg) 0;
-        }
-
         .section-title {
-            font-size: 2.2rem;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
             font-weight: 600;
-            margin-bottom: var(--spacing-md);
             text-align: center;
+            margin-bottom: 2rem;
             position: relative;
-            padding-bottom: 1rem;
         }
-
         .section-title::after {
             content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 3px;
-            background-color: var(--primary-color);
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #6c5ce7;
+            margin: 0.5rem auto 0;
         }
-        
-        .content-wrapper {
-            background: #ffffff;
-            padding: var(--spacing-lg);
-            border-radius: 8px;
-            box-shadow: var(--shadow);
-        }
-
-
-        /* --- Project Overview --- */
-        #overview p {
-            font-size: 1.1rem;
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
-            line-height: 1.8;
-        }
-
-        /* --- Architectural Contributions --- */
-        #contributions ul {
+        .key-points ul {
             list-style: none;
+            padding: 0;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1.5rem;
-            max-width: 900px;
-            margin: 0 auto;
         }
-
-        #contributions li {
-            background-color: var(--bg-color);
+        .key-points li {
+            background-color: #fff;
             padding: 1.5rem;
             border-radius: 8px;
-            font-size: 1rem;
-            border-left: 4px solid var(--primary-color);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
-
-        #contributions li:hover {
+        .key-points li:hover {
             transform: translateY(-5px);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
         }
-
-        /* --- Image Gallery --- */
-        .gallery-grid {
+        .contributions {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
         }
-
-        .gallery-item figure {
+        .contribution-item {
+            background: #fff;
+            padding: 2rem;
+            border-left: 5px solid #6c5ce7;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .contribution-item h4 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: #6c5ce7;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        .image-gallery figure {
             margin: 0;
-            background: #ffffff;
+            background-color: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
         }
-
-        .gallery-item figure:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        .image-gallery figure:hover {
+            transform: scale(1.03);
         }
-
-        .gallery-item img {
+        .image-gallery img {
             width: 100%;
             height: auto;
             display: block;
-            aspect-ratio: 16 / 10;
-            object-fit: cover;
         }
-
-        .gallery-item figcaption {
-            padding: 1rem;
-            font-size: 0.9rem;
-            color: #666;
+        .image-gallery figcaption {
+            padding: 1.5rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .footer {
+            background-color: #2d3436;
+            color: #fff;
             text-align: center;
-            background-color: #ffffff;
-            border-top: 1px solid var(--divider-color);
+            padding: 2rem;
+            margin-top: 4rem;
         }
-        
-        .gallery-item.full-width {
-            grid-column: 1 / -1; /* Makes item span full width */
-        }
-
-        /* --- Footer --- */
-        footer {
-            background-color: var(--primary-color);
-            color: #ffffff;
-            text-align: center;
-            padding: var(--spacing-md);
-            margin-top: var(--spacing-lg);
-        }
-
-        footer p {
-            margin: 0.25rem 0;
-            font-weight: 300;
-        }
-
-        footer .footer-name {
-            font-weight: 600;
-        }
-
-        /* --- Responsive Design --- */
-        @media (max-width: 992px) {
-            .header h1 { font-size: 2.4rem; }
-            .header h2 { font-size: 1.1rem; }
-            .section-title { font-size: 2rem; }
-        }
-
         @media (max-width: 768px) {
-            #contributions ul {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            .header p {
+                font-size: 1rem;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+            .key-points ul, .contributions, .image-gallery {
                 grid-template-columns: 1fr;
             }
-            .content-wrapper { padding: var(--spacing-md); }
-            .header h1 { font-size: 2rem; }
-            .header h2 { font-size: 1rem; }
-        }
-
-        @media (max-width: 480px) {
-            .container { padding: 1rem; }
-            .header { padding: var(--spacing-md) 1rem; }
-            .section-title { font-size: 1.8rem; }
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header class="header">
-        <div class="container">
-            <h1>Enigma, India Bulls Group Housing</h1>
-            <h2>Premium Residential Towers | Dwarka Expressway, Gurugram | Completed 2022</h2>
-        </div>
+        <h1>Indiabulls Enigma</h1>
+        <p>Sector 110, Gurgaon</p>
     </header>
 
-    <main>
-        <section id="overview">
-            <div class="container">
-                <div class="content-wrapper">
-                    <h3 class="section-title">Project Overview</h3>
-                    <p>
-                        Indiabulls Enigma is a landmark of high-rise luxury residential architecture strategically located on the Dwarka Expressway in Gurugram. [4] This development emphasizes opulent living through meticulously designed 4 and 5 BHK apartments and penthouses, where form and function converge to create an exceptional living experience. [3, 2] The project integrates eco-friendly design, Vaastu principles, and state-of-the-art sustainable systems, offering residents a harmonious blend of modern comforts and natural tranquility with extensive landscaped greens and premium lifestyle amenities. [3, 2]
-                    </p>
-                </div>
+    <div class="container">
+
+        <section class="section key-points">
+            <h2 class="section-title">Project Highlights</h2>
+            <ul>
+                <li><strong>Innovative Design for Privacy:</strong> The township's layout, designed by the renowned firm ARCOP, ensures that no apartment overlooks another. This unique design principle maximizes natural light and cross-ventilation for all residences. [3]</li>
+                <li><strong>Luxury and Eco-Friendly Architecture:</strong> The project features spacious 4 and 5-BHK apartments and penthouses with high ceilings, imported marble, and teakwood frames. [3, 8] It also incorporates eco-friendly architectural principles. [2, 8]</li>
+                <li><strong>Expansive Green Spaces:</strong> Spread across approximately 19.85 acres, the development boasts extensive themed landscapes that create a natural green buffer and a serene environment. [2, 7]</li>
+                <li><strong>Comprehensive Modern Amenities:</strong> Residents have access to a wide array of facilities, including a clubhouse with a spa and gym, swimming pools, sports courts, and children's play areas. [3]</li>
+                <li><strong>Strategic and Vaastu-Compliant Planning:</strong> The master plan is a blend of aesthetics and technology, with a focus on Vaastu-compliant architecture to enhance the living experience. [3] The location on Dwarka Expressway provides excellent connectivity. [11]</li>
+            </ul>
+        </section>
+
+        <section class="section contributions">
+            <h2 class="section-title">My Contributions</h2>
+            <div class="contribution-item">
+                <h4>Design Conceptualization & Development</h4>
+                <p>I was instrumental in the early-stage design process, focusing on translating the core concept of privacy and natural integration into viable architectural plans. This involved developing spatial layouts that prioritized unobstructed views and natural airflow, directly contributing to the unique cross-ventilation feature of the project.</p>
+            </div>
+            <div class="contribution-item">
+                <h4>Material and Finish Selection</h4>
+                <p>My role involved curating the material palette for both interior and exterior applications. I focused on selecting premium and sustainable materials such as the imported marble and teakwood, ensuring that the final aesthetic aligned with the project's luxury positioning while adhering to eco-friendly standards.</p>
+            </div>
+            <div class="contribution-item">
+                <h4>Stakeholder Coordination & Project Management</h4>
+                <p>I facilitated seamless communication between the design team, engineering, and landscaping consultants from Site Concepts. This ensured that the architectural vision was executed precisely and that the integration of the built form with the landscape was harmonious and effective.</p>
             </div>
         </section>
 
-        <section id="contributions">
-            <div class="container">
-                <div class="content-wrapper">
-                    <h3 class="section-title">Architectural Contributions</h3>
-                    <ul>
-                        <li>Played a key role in the initial design conceptualization workshops with the lead architect (ARCOP) and client, focusing on creating a landmark elevation and luxurious user experience. [2]</li>
-                        <li>Contributed to the spatial planning of unit layouts, focusing on optimizing natural light, cross-ventilation, and ensuring that apartments do not overlook one another for enhanced privacy. [2, 6]</li>
-                        <li>Involved in the research and integration of sustainable building practices and specifications for an earthquake-resistant RCC framed structure, aligning with modern construction standards. [3]</li>
-                        <li>Facilitated on-site architectural coordination with engineering teams to ensure design integrity was maintained from foundation to finishing stages.</li>
-                        <li>Actively participated in design review meetings with clients and consultant teams, helping refine material selections like imported marble, teakwood frames, and modular kitchen specifications. [3, 4]</li>
-                        <li>Assisted in developing the site-level master plan, including the strategic placement of towers, clubhouse, green buffer zones, and recreational areas to foster a community-centric environment. [2]</li>
-                    </ul>
-                </div>
+        <section class="section">
+            <h2 class="section-title">Architectural Showcase</h2>
+            <div class="image-gallery">
+                <figure>
+                    <img src="https://assets-news.housing.com/news/wp-content/uploads/2016/06/27124332/Indiabulls-Real-Estate-to-raise-Rs-538-crores-from-promoters-FB-1200x700-compressed.jpg" alt="Exterior facade of Indiabulls Enigma showcasing its towering structure and curved balconies">
+                    <figcaption>The exterior facade of Indiabulls Enigma showcases a dynamic interplay of linear and curved forms. The prominent semi-circular balconies not only create a distinctive aesthetic but also function to provide expansive panoramic views and enhance the penetration of natural light into the living spaces, while ensuring a degree of privacy between units.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://www.gurgaon-property.com/property_images/indiabulls-enigma-1025-1.jpg" alt="Clubhouse and swimming pool area of Indiabulls Enigma">
+                    <figcaption>This image captures the luxurious clubhouse and the adjoining swimming pool area, which serves as the social heart of the community. The architecture of the clubhouse features extensive glazing, blurring the lines between indoor and outdoor spaces. This design promotes a seamless flow for residents from the recreational interiors to the landscaped pool deck, enhancing the resort-like ambiance.</figcaption>
+                </figure>
+                 <figure>
+                    <img src="https://www.investors-clinic.com/blog/wp-content/uploads/2022/02/Indiabulls-Enigma-Apartment.jpg" alt="Landscaped green spaces and walkways at Indiabulls Enigma">
+                    <figcaption>The integration of the built environment with nature is a cornerstone of this project's design philosophy. The manicured lawns and curvilinear pathways seen here create a tranquil setting that acts as a natural buffer from urban noise. The landscaping is not merely decorative but is integral to the project's goal of fostering a serene and healthy living environment.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3-ap-south-1.amazonaws.com/settlin/projects/ZfrL83xMQRn8gmZ9s/images/1500446732958.jpg" alt="Floor plan showcasing the cross-shaped layout and ventilation design of Indiabulls Enigma">
+                    <figcaption>This architectural plan illustrates the innovative cross-shaped tower layout. This unique configuration is key to the project's design, as it ensures that each apartment has three open sides, thereby maximizing natural light and cross-ventilation. This spatial arrangement eliminates the overlooking of adjacent units, a testament to the thoughtful engineering for enhanced privacy and comfort.</figcaption>
+                </figure>
             </div>
         </section>
+    </div>
 
-        <section id="gallery">
-            <div class="container">
-                <h3 class="section-title">Project Gallery</h3>
-                <div class="gallery-grid">
-                    
-                    <div class="gallery-item full-width">
-                        <figure>
-                            <img src="https://mukta2222.github.io/portfolio/enigma1.jpg" alt="Promotional Artwork for Indiabulls Enigma">
-                            <figcaption>Promotional Artwork for Indiabulls Enigma</figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="gallery-item">
-                        <figure>
-                            <img src="https://i.imgur.com/YgE615B.jpg" alt="Evening view of the completed residential towers">
-                            <figcaption>Completed Residential Towers at Dusk</figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="gallery-item">
-                        <figure>
-                            <img src="https://i.imgur.com/R3x3fS0.jpg" alt="Clubhouse and main swimming pool deck">
-                            <figcaption>Clubhouse and Pool Deck Amenities</figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="gallery-item full-width">
-                        <figure>
-                            <img src="https://mukta2222.github.io/portfolio/enigma3.jpg" alt="Architectural floor plans showing ventilation and views">
-                            <figcaption>Optimized Floor Plans for Unobstructed Views and Cross-Ventilation</figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="container">
-            <p><strong>Project:</strong> Enigma, India Bulls Group Housing</p>
-            <p><strong>Location:</strong> Sector 110, Dwarka Expressway, Gurugram</p>
-            <p><strong>Year of Completion:</strong> 2022</p>
-            <p class="footer-name">Portfolio of: [Your Name], Project Architect (Team Member)</p>
-        </div>
+    <footer class="footer">
+        <p>© 2024 Mukta Rai. All rights reserved.</p>
+        <p>Created by Mukta Rai, Project Architect.</p>
     </footer>
 
 </body>
