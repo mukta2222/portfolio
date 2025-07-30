@@ -3,89 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indiabulls Enigma - Mukta Rai - Project Architect</title>
+    <title>Architectural Portfolio: Indiabulls Enigma | Mukta Rai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <style>
+        /* CSS Reset and Base Styles */
+        :root {
+            --primary-color: #343a40;
+            --secondary-color: #6c757d;
+            --accent-color: #c59d5f;
+            --background-color: #f8f9fa;
+            --text-color: #212529;
+            --card-bg: #ffffff;
+            --font-primary: 'Montserrat', sans-serif;
+            --font-secondary: 'Roboto', sans-serif;
+        }
+
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: var(--font-secondary);
             margin: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.7;
         }
-        .header {
-            background: linear-gradient(to right, rgba(45, 52, 54, 0.8), rgba(99, 110, 114, 0.8));
-            color: #fff;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-        .header h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 3.5rem;
-            margin: 0;
-            font-weight: 700;
-        }
-        .header p {
-            font-size: 1.2rem;
-            margin-top: 0.5rem;
-            font-weight: 300;
-        }
+
+        /* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 0 2rem;
         }
+
+        /* Header */
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        .header h1 {
+            font-family: var(--font-primary);
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 1.5px;
+        }
+        .header p {
+            font-size: 1.25rem;
+            margin: 0.5rem 0 0;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        /* Section Styling */
         .section {
-            margin-bottom: 3rem;
+            padding: 4rem 0;
         }
         .section-title {
-            font-family: 'Montserrat', sans-serif;
+            font-family: var(--font-primary);
             font-size: 2.5rem;
             font-weight: 600;
             text-align: center;
-            margin-bottom: 2rem;
+            margin: 0 auto 3rem;
             position: relative;
         }
         .section-title::after {
             content: '';
-            display: block;
-            width: 60px;
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
             height: 4px;
-            background-color: #6c5ce7;
-            margin: 0.5rem auto 0;
+            background-color: var(--accent-color);
         }
-        .key-points ul {
-            list-style: none;
-            padding: 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-        }
-        .key-points li {
-            background-color: #fff;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .key-points li:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        }
-        .contributions {
+
+        /* Key Points Section */
+        .key-points-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
+            list-style: none;
+            padding: 0;
+        }
+        .key-points-grid li {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+            border-left: 4px solid var(--accent-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .key-points-grid li:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+        }
+        .key-points-grid strong {
+            font-family: var(--font-primary);
+            font-weight: 600;
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        /* My Contributions Section */
+        .contributions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
         }
         .contribution-item {
-            background: #fff;
-            padding: 2rem;
-            border-left: 5px solid #6c5ce7;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
         }
-        .contribution-item h4 {
-            margin-top: 0;
-            font-size: 1.2rem;
-            color: #6c5ce7;
+        .contribution-item h3 {
+            font-family: var(--font-primary);
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin: 0 0 1rem;
         }
+        .contribution-item p {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        /* Image Gallery */
         .image-gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -93,110 +136,163 @@
         }
         .image-gallery figure {
             margin: 0;
-            background-color: #fff;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
+            background: var(--card-bg);
             border-radius: 8px;
             overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+            display: flex;
+            flex-direction: column;
+            transition: box-shadow 0.3s ease;
         }
         .image-gallery figure:hover {
-            transform: scale(1.03);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
         }
         .image-gallery img {
             width: 100%;
-            height: auto;
+            height: 280px;
+            object-fit: cover;
             display: block;
         }
         .image-gallery figcaption {
             padding: 1.5rem;
             font-size: 0.95rem;
-            line-height: 1.6;
+            flex-grow: 1;
         }
+        
+        /* Footer */
         .footer {
-            background-color: #2d3436;
-            color: #fff;
+            background-color: var(--primary-color);
+            color: white;
             text-align: center;
-            padding: 2rem;
+            padding: 2.5rem 1rem;
             margin-top: 4rem;
         }
+        .footer p {
+            margin: 0.4rem 0;
+            font-weight: 300;
+            opacity: 0.8;
+        }
+        .footer p:first-child {
+            font-weight: 400;
+            opacity: 1;
+        }
+        
+        /* Responsive Adjustments */
         @media (max-width: 768px) {
+            .container {
+                padding: 0 1.5rem;
+            }
             .header h1 {
-                font-size: 2.5rem;
+                font-size: 2.8rem;
             }
             .header p {
-                font-size: 1rem;
+                font-size: 1.1rem;
             }
             .section-title {
                 font-size: 2rem;
             }
-            .key-points ul, .contributions, .image-gallery {
+            .image-gallery {
                 grid-template-columns: 1fr;
+            }
+            .image-gallery img {
+                height: 250px;
             }
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header class="header">
         <h1>Indiabulls Enigma</h1>
-        <p>Sector 110, Gurgaon</p>
+        <p>Project Address: Sector 110, Gurgaon</p>
     </header>
 
-    <div class="container">
+    <main>
+        <div class="container">
+            <section id="key-points" class="section">
+                <h2 class="section-title">Project Highlights</h2>
+                <ul class="key-points-grid">
+                    <li>
+                        <strong>Innovative Architectural Layout:</strong> The unique cross-shaped master plan ensures no apartment directly overlooks another, maximizing privacy while promoting exceptional cross-ventilation and penetration of natural light throughout the living spaces.
+                    </li>
+                    <li>
+                        <strong>Expansive Luxury Residences:</strong> Offering generously sized 4 & 5-BHK apartments and penthouses, the project caters to a premium lifestyle with floor plans ranging from 3,350 to 6,790 sq. ft., designed for spatial comfort and elegance.
+                    </li>
+                    <li>
+                        <strong>Integrated Green Spaces:</strong> Over 16 acres of the site are dedicated to themed landscapes and verdant buffers, creating a sound-insulated and ecologically balanced environment that integrates nature with modern living.
+                    </li>
+                    <li>
+                        <strong>Premium Material Palette:</strong> The interiors are defined by a commitment to quality, featuring high-end materials like imported marble flooring, elegant teakwood door frames, and superior modern fixtures for a lasting sense of luxury.
+                    </li>
+                    <li>
+                        <strong>World-Class Amenities:</strong> A state-of-the-art clubhouse, swimming pool, and comprehensive sports facilities are seamlessly integrated into the design, providing residents with a holistic and active lifestyle.
+                    </li>
+                    <li>
+                        <strong>Strategic Urban Connectivity:</strong> Located in the prime corridor of Sector 110 on the Dwarka Expressway, the project offers unparalleled access to Delhi, Gurgaon's commercial hubs, and the IGI Airport.
+                    </li>
+                </ul>
+            </section>
 
-        <section class="section key-points">
-            <h2 class="section-title">Project Highlights</h2>
-            <ul>
-                <li><strong>Innovative Design for Privacy:</strong> The township's layout, designed by the renowned firm ARCOP, ensures that no apartment overlooks another. This unique design principle maximizes natural light and cross-ventilation for all residences.</li>
-                <li><strong>Luxury and Eco-Friendly Architecture:</strong> The project features spacious 4 and 5-BHK apartments and penthouses with high ceilings, imported marble, and teakwood frames.It also incorporates eco-friendly architectural principles.</li>
-                <li><strong>Expansive Green Spaces:</strong> Spread across approximately 19.85 acres, the development boasts extensive themed landscapes that create a natural green buffer and a serene environment.</li>
-                <li><strong>Comprehensive Modern Amenities:</strong> Residents have access to a wide array of facilities, including a clubhouse with a spa and gym, swimming pools, sports courts, and children's play areas.</li>
-                <li><strong>Strategic and Vaastu-Compliant Planning:</strong> The master plan is a blend of aesthetics and technology, with a focus on Vaastu-compliant architecture to enhance the living experience.The location on Dwarka Expressway provides excellent connectivity. </li>
-            </ul>
-        </section>
+            <section id="contributions" class="section">
+                <h2 class="section-title">Architectural Role</h2>
+                <div class="contributions-grid">
+                    <div class="contribution-item">
+                        <h3>Design Conceptualization</h3>
+                        <p>Contributed to the core architectural concept, focusing on translating the "imagination engineering" vision into functional unit layouts and ensuring the spatial hierarchy achieved the desired balance of privacy and community.</p>
+                    </div>
+                    <div class="contribution-item">
+                        <h3>Material & Aesthetic Curation</h3>
+                        <p>Spearheaded the selection of the interior and exterior material palette. My focus was on curating durable, high-end finishes that would elevate the aesthetic and align with the project's luxurious positioning.</p>
+                    </div>
+                    <div class="contribution-item">
+                        <h3>Interdisciplinary Coordination</h3>
+                        <p>Acted as a crucial liaison between the lead design firm (ARCOP) and specialized consultants, including landscape designers, to ensure cohesive integration of all architectural and environmental elements.</p>
+                    </div>
+                </div>
+            </section>
 
-        <section class="section contributions">
-            <h2 class="section-title">My Contributions</h2>
-            <div class="contribution-item">
-                <h4>Design Conceptualization & Development</h4>
-                <p>I was instrumental in the early-stage design process and I was fully involved in the project from inception to completion, overseeing design development, working and submission drawings, BOQ, tender documentation, and site supervision..</p>
-            </div>
-            <div class="contribution-item">
-                <h4>Material and Finish Selection</h4>
-                <p>My role involved curating the material palette for both interior and exterior applications. I focused on selecting premium and sustainable materials such as the imported marble and teakwood, ensuring that the final aesthetic aligned with the project's luxury positioning while adhering to eco-friendly standards.</p>
-            </div>
-            <div class="contribution-item">
-                <h4>Stakeholder Coordination & Project Management</h4>
-                <p>I facilitated seamless communication between the design team, engineering, and landscaping consultants from Site Concepts. This ensured that the architectural vision was executed precisely and that the integration of the built form with the landscape was harmonious and effective.</p>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">Architectural Showcase</h2>
-            <div class="image-gallery">
-                <figure>
-                    <img src="https://mukta2222.github.io/portfolio/enigma1.jpg" alt="Exterior facade of Indiabulls Enigma showcasing its towering structure and curved balconies">
-                    <figcaption>The exterior facade of Indiabulls Enigma showcases a dynamic interplay of linear and curved forms. The prominent semi-circular balconies not only create a distinctive aesthetic but also function to provide expansive panoramic views and enhance the penetration of natural light into the living spaces, while ensuring a degree of privacy between units.</figcaption>
-                </figure>
-                <figure>
-                    <img src="https://mukta2222.github.io/portfolio/enigma2.jpg" alt="Clubhouse and swimming pool area of Indiabulls Enigma">
-                    <figcaption>This image captures the luxurious clubhouse and the adjoining swimming pool area, which serves as the social heart of the community. The architecture of the clubhouse features extensive glazing, blurring the lines between indoor and outdoor spaces. This design promotes a seamless flow for residents from the recreational interiors to the landscaped pool deck, enhancing the resort-like ambiance.</figcaption>
-                </figure>
-                 <figure>
-                    <img src="https://mukta2222.github.io/portfolio/enigma3.jpg" alt="Landscaped green spaces and walkways at Indiabulls Enigma">
-                    <figcaption>The integration of the built environment with nature is a cornerstone of this project's design philosophy. The manicured lawns and curvilinear pathways seen here create a tranquil setting that acts as a natural buffer from urban noise. The landscaping is not merely decorative but is integral to the project's goal of fostering a serene and healthy living environment.</figcaption>
-                </figure>
-                <figure>
-                    <img src="https://mukta2222.github.io/portfolio/enigma4.jpg" alt="Floor plan showcasing the cross-shaped layout and ventilation design of Indiabulls Enigma">
-                    <figcaption>This architectural plan illustrates the innovative cross-shaped tower layout. This unique configuration is key to the project's design, as it ensures that each apartment has three open sides, thereby maximizing natural light and cross-ventilation. This spatial arrangement eliminates the overlooking of adjacent units, a testament to the thoughtful engineering for enhanced privacy and comfort.</figcaption>
-                </figure>
-            </div>
-        </section>
-    </div>
+            <section id="gallery" class="section">
+                <h2 class="section-title">Architectural Showcase</h2>
+                <div class="image-gallery">
+                    <figure>
+                        <img src="img1.jpg" alt="Curved facade of the Enigma high-rise tower">
+                        <figcaption><strong>Façade Articulation:</strong> The tower’s exterior is defined by its rhythmic, curved balconies. This design choice serves a dual purpose: it creates a dynamic visual aesthetic that softens the building's scale and provides residents with expansive, sweeping views, enhancing the connection to the outdoors.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img2.jpg" alt="Resort-style pool and clubhouse at Enigma">
+                        <figcaption><strong>Amenity Integration:</strong> The clubhouse is architecturally integrated with the landscape and pool, forming the social heart of the community. Expansive glazing dissolves the boundary between inside and out, while the composition of building, water, and greenery creates a serene, resort-like atmosphere for residents.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img3.jpg" alt="Architectural floor plans of the Enigma project">
+                        <figcaption><strong>Spatial Innovation:</strong> The floor plans reveal the project's core genius. The cruciform layout is a strategic solution to maximize privacy and airflow, ensuring each unit feels like a corner apartment. This demonstrates a deep understanding of residential design that prioritizes the occupant's experience.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img4.jpg" alt="Landscaped grounds with clubhouse at dusk">
+                        <figcaption><strong>Contextual Integration:</strong> This view highlights the synergy between architecture and landscape. The clubhouse, with its illuminated modern form, is nestled within contoured lawns. This thoughtful landscaping acts as a natural acoustic buffer and creates a tranquil park-like setting that defines the project's exclusive character.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img5.jpg" alt="Grand entrance gate of Indiabulls Enigma">
+                        <figcaption><strong>Sense of Arrival:</strong> The entrance is a carefully orchestrated sequence designed to evoke a sense of prestige. The clean, modern lines of the gateway, combined with manicured landscaping and clear signage, establish a formal threshold that transitions from the public domain to the private residential enclave.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img6.jpg" alt="Aerial view of the Indiabulls Enigma master plan">
+                        <figcaption><strong>Master Planning Strategy:</strong> The aerial view reveals a highly organized site plan. Towers are positioned to optimize views and access to the central amenity spine, which includes the pool and green spaces. This layout fosters a walkable, community-centric environment while maintaining the privacy of individual buildings.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img7.jpg" alt="Double-height lobby with decorative panels">
+                        <figcaption><strong>Interior Grandeur:</strong> The lobby's double-height volume immediately establishes a sense of scale and luxury. Intricate, nature-inspired decorative screens serve as artistic focal points, blending contemporary design with ornate detailing. The material choice of polished stone and warm wood creates a sophisticated and welcoming first impression.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img8.jpg" alt="Reception area with modern furniture">
+                        <figcaption><strong>Detail-Oriented Design:</strong> The reception area showcases meticulous attention to detail. Form, texture, and light are used to create a refined space. The bespoke desk, artistic wall treatments, and curated furniture selection work in harmony to produce an interior environment that is both functional and aesthetically compelling, reflecting the quality of the residences above.</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </div>
+    </main>
 
     <footer class="footer">
-        <p>© 2024 Mukta Rai. All rights reserved.</p>
+        <p>© 2025 Mukta Rai. All rights reserved.</p>
         <p>Created by Mukta Rai, Project Architect.</p>
     </footer>
 
