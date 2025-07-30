@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio: House at May Fair Garden</title>
+    <style>
+        /* Basic Reset and Font Setup */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Using Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400&display=swap');
+
+        /* Header Styling */
+        .header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image1.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            margin: 0;
+        }
+
+        .header p {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Main Content Wrapper */
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Section Styling */
+        .section {
+            background: #fff;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        /* Underline effect for section titles */
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: #4a90e2;
+        }
+
+        /* Key Highlights & Contributions List Styling */
+        .features-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .features-list li {
+            background: #f9f9f9;
+            padding: 1rem;
+            border-left: 4px solid #4a90e2;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .features-list li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        /* Image Gallery Styling */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .image-gallery figure {
+            margin: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .image-gallery figure:hover {
+             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery figure:hover img {
+            transform: scale(1.05);
+        }
+
+        .image-gallery figcaption {
+            padding: 1.5rem;
+            background: #fff;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 2rem 1rem;
+            font-weight: 300;
+        }
+
+        .footer p {
+            margin: 0.5rem 0;
+        }
+
+        /* Responsive Design using Media Queries */
+        @media (min-width: 768px) {
+            .image-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 767px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            .header p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>House at May Fair Garden</h1>
+        <p>New Delhi</p>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2>Project Highlights</h2>
+            <ul class="features-list">
+                <li><strong>Contemporary Tropical Aesthetic:</strong> A design that masterfully blends clean, modern lines with lush, integrated greenery, creating a tranquil oasis within a dense urban context.</li>
+                <li><strong>Indoor-Outdoor Symbiosis:</strong> The architectural plan emphasizes a seamless flow between interior and exterior spaces through expansive glazing, courtyards, and landscaped pockets.</li>
+                <li><strong>Strategic Material Palette:</strong> A sophisticated use of natural materials, including rich wood cladding, textured stone walls, and expansive glass, achieving a warm yet minimalist character.</li>
+                <li><strong>Biophilic Central Courtyard:</strong> A stunning double-height interior courtyard featuring a live tree under a skylight serves as the home's spiritual and visual anchor.</li>
+                <li><strong>Volumetric Play and Light:</strong> The design features dynamic, interlocking cubist forms and cantilevered structures that create visual interest and manipulate natural light throughout the day.</li>
+                <li><strong>Emphasis on Privacy:</strong> Cleverly designed facades and landscape elements provide substantial privacy from the street while maintaining an open and airy feel within the property.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>My Contributions</h2>
+            <ul class="features-list">
+                <li><strong>Lead Design Conceptualization:</strong> Spearheaded the initial design concept, focusing on the integration of nature and the creation of hierarchical spatial experiences from the public to the private domains.</li>
+                <li><strong>Material and Finishes Specification:</strong> Curated the selection of all architectural materials, ensuring a harmonious and high-end palette that enhanced the design's contextual and aesthetic goals.</li>
+                <li><strong>Project Management & Coordination:</strong> Served as the primary point of contact between the client, contractors, and engineering consultants to ensure the faithful execution of the design vision.</li>
+                <li><strong>Detail-Oriented Design Solutions:</strong> Developed innovative solutions for key architectural features, such as the internal courtyard structure and the bespoke facade details, ensuring both beauty and functionality.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Architectural Showcase</h2>
+            <div class="image-gallery">
+                <figure>
+                    <img src="image1.jpg" alt="Night view of the House at May Fair Garden showcasing its illuminated facade.">
+                    <figcaption>
+                        <strong>Evening Illumination and Form:</strong> The architectural composition is dramatized at dusk through a carefully orchestrated lighting scheme. Uplighting accentuates the texture of the stone cladding, while the warm interior glow reveals the upper volume's spaciousness. The cantilevered structure appears to float, creating a dynamic interplay of solid and void that defines its modern aesthetic.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="image3.jpg" alt="Daytime exterior view of the villa's entrance and facade.">
+                    <figcaption>
+                        <strong>Facade Composition and Materiality:</strong> The street-facing elevation presents a composition of bold, interlocking forms. The contrast between the light-colored stone-clad cube and the warm, horizontal timber screening establishes a strong visual identity. This design balances the need for privacy at the ground level with a sense of openness above, thoughtfully integrating the building into its verdant surroundings.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="image4.jpg" alt="Interior view of the central courtyard with a tree under a skylight.">
+                    <figcaption>
+                        <strong>Biophilic Core:</strong> The heart of the villa is a serene, double-height atrium featuring a mature tree reaching towards a large skylight. This central void functions as a light well, drawing natural illumination deep into the floor plan. The textured stone wall adds a tactile dimension, reinforcing the connection to nature and establishing a peaceful, contemplative space that organizes the home's circulation.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="image2.jpg" alt="View of the landscaped garden path and water feature.">
+                    <figcaption>
+                        <strong>Integrated Landscape Design:</strong> The architecture extends into the landscape, where material and form create a cohesive experience. Stone pavers appear to float over a tranquil water feature, guiding movement through the garden. The verticality of the wood-clad walls and lush plantings creates layers of privacy and texture, forming an intimate garden sanctuary that complements the main structure.
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Mukta Rai. All rights reserved.</p>
+        <p>Created by Mukta Rai, Project Architect.</p>
+    </footer>
+
+</body>
+</html>
