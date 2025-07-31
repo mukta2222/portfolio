@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mukta Rai | Project Architect</title>
-  <!-- Google Fonts: Roboto & Playfair Display -->
+  <!-- Google Fonts: Playfair Display & Roboto -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     /* Global Styles */
@@ -128,14 +128,11 @@
       border-radius: 0 10px 10px 0;
       transition: all 0.35s ease;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-      overflow: hidden;
     }
     .project-card a {
       text-decoration: none;
       color: inherit;
       display: block;
-      z-index: 2;
-      position: relative;
     }
     .project-card:hover {
       background-color: #e6f7f7;
@@ -160,6 +157,22 @@
       color: #555;
       line-height: 1.65;
     }
+    /* "Click Here To View Project" Styling */
+    .view-link {
+      display: inline-block;
+      margin-top: 12px;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1em;
+      color: #c41b1b; /* Elegant deep red */
+      font-style: italic;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      transition: color 0.3s ease;
+    }
+    .view-link:hover {
+      color: #900;
+      text-decoration: underline;
+    }
     /* Footer */
     footer {
       text-align: center;
@@ -169,15 +182,14 @@
       font-size: 0.9em;
       border-top: 1px solid #dee2e6;
     }
-    footer .copyright {
+    .copyright {
       margin: 8px 0;
       font-weight: 500;
     }
-    footer .creator {
+    .creator {
       color: #008080;
       font-weight: 600;
     }
-
     /* Responsive Adjustments */
     @media (max-width: 768px) {
       .container {
@@ -196,6 +208,9 @@
       }
       .project-title {
         font-size: 1.25em;
+      }
+      .view-link {
+        font-size: 1.05em;
       }
     }
   </style>
@@ -257,6 +272,7 @@
           <div class="project-desc">
             A premium residential development featuring integrated layouts, sustainable materials, and seismic-resilient design. Oversaw architectural design, approvals, and construction supervision.
           </div>
+          <div class="view-link">Click Here To View Project</div>
         </a>
       </div>
 
@@ -267,6 +283,7 @@
           <div class="project-desc">
             Mixed-use retail and entertainment hub with climate-responsive central courtyard. Responsible for architectural detailing and interior integration.
           </div>
+          <div class="view-link">Click Here To View Project</div>
         </a>
       </div>
 
@@ -277,19 +294,20 @@
           <div class="project-desc">
             High-density residential complex with optimized unit planning and modern façade treatment. Led design coordination and municipal submissions.
           </div>
+          <div class="view-link">Click Here To View Project</div>
         </a>
       </div>
 
       <div class="project-card">
         <a href="https://mukta2222.github.io/portfolio/uniworld.html" target="_blank">
-          <div class="project-title">Uniworld City, Phase III ( AIR (G+40), Retail/Club House</div>
+          <div class="project-title">Uniworld City, Phase III (AIR (G+40), Retail/Club House)</div>
           <div class="project-location">Kolkata, West Bengal</div>
           <div class="project-desc">
             Master-planned township with high-rise towers and community amenities. Handled architectural documentation and site execution.
           </div>
+          <div class="view-link">Click Here To View Project</div>
         </a>
       </div>
-     
 
       <div class="project-card">
         <a href="https://mukta2222.github.io/portfolio/cidade.html" target="_blank">
@@ -298,6 +316,7 @@
           <div class="project-desc">
             Luxury villa cluster emphasizing tropical modernism and privacy. Managed design development and client coordination.
           </div>
+          <div class="view-link">Click Here To View Project</div>
         </a>
       </div>
 
@@ -308,10 +327,10 @@
           <div class="project-desc">
             Integrated healthcare complex designed for efficiency, hygiene, and patient comfort. Oversaw architectural planning and facility workflow optimization.
           </div>
+          <div class="view-link">Click Here To View Project</div>
         </a>
       </div>
 
-      <!-- Newly Added Projects -->
       <div class="project-card">
         <a href="https://mukta2222.github.io/portfolio/uniworld-resort.html" target="_blank">
           <div class="project-title">Uniworld Resort</div>
@@ -319,6 +338,7 @@
           <div class="project-desc">
             A luxury wellness retreat blending contemporary design with natural landscapes. Led master planning, architectural design, and landscape integration.
           </div>
+          <div class="view-link">Click Here To View Project</div>
         </a>
       </div>
 
@@ -329,6 +349,7 @@
           <div class="project-desc">
             Custom luxury home with modernist interiors and energy-efficient features. Full design and interior execution.
           </div>
+          <div class="view-link">Click Here To View Project</div>
         </a>
       </div>
 
@@ -339,21 +360,19 @@
           <div class="project-desc">
             Premium recreational facility with multipurpose halls, fitness zones, and social lounges. Designed for functionality, aesthetics, and member experience.
           </div>
+          <div class="view-link">Click Here To View Project</div>
         </a>
       </div>
-      
 
-        <div class="project-card">
+      <div class="project-card">
         <a href="https://mukta2222.github.io/portfolio/cap.html" target="_blank">
           <div class="project-title">Chandigarh Amusement Park</div>
           <div class="project-location">Chandigarh</div>
           <div class="project-desc">
             Family entertainment complex with thematic zones and accessible design. Contributed to architectural planning and user flow optimization.
           </div>
+          <div class="view-link">Click Here To View Project</div>
         </a>
-      </div>
-     
-    </a>
       </div>
 
       <div class="project-card">
@@ -363,9 +382,10 @@
           <div class="project-desc">
             Grand private estate reflecting regional elegance and modern luxury. Directed full architectural and interior design with bespoke detailing.
           </div>
+          <div class="view-link">Click Here To View Project</div>
         </a>
       </div>
-      
+
     </div>
 
     <!-- FOOTER -->
